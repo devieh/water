@@ -11,17 +11,18 @@ define('DB_PASS', 'Devieh@22');
 
 // Application configuration
 define('APP_NAME', 'Water Management System');
-define('APP_URL', 'http://localhost/water_ms/');
+define('APP_URL', 'http://176.34.133.248/water_ms/');
 define('TIMEZONE', 'Africa/Dar_es_Salaam');
 
 // Encryption configuration
-define('ENCRYPTION_KEY', 'your-secret-encryption-key-32bytes'); // Must be 32 bytes for AES-256
+// NOTE: Badilisha hii na ufunguo wako halisi wa herufi 32 (angalia maelezo chini)
+define('ENCRYPTION_KEY', 'ChangeThisTo32CharsRandomKey!!!!'); // Must be exactly 32 bytes for AES-256
 define('ENCRYPTION_METHOD', 'AES-256-CBC');
 
 // Session configuration
 ini_set('session.cookie_httponly', 1);
 ini_set('session.use_only_cookies', 1);
-ini_set('session.cookie_secure', 0); // Set to 1 if using HTTPS
+ini_set('session.cookie_secure', 0); // Weka 1 kama unatumia HTTPS
 
 // Error reporting
 error_reporting(E_ALL);
